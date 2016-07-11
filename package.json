@@ -1,0 +1,48 @@
+{
+  "name": "mobx-collection-rest-api",
+  "version": "0.0.0",
+  "main": "dist/mobx-collection-rest-api.min.js",
+  "description": "REST API decorator mobx-collection",
+  "keywords": [
+    "rest",
+    "api",
+    "decorator",
+    "mobx",
+    "collection"
+  ],
+  "repository": "https://github.com/lukaszgrolik/mobx-collection-rest-api",
+  "homepage": "https://github.com/lukaszgrolik/mobx-collection-rest-api",
+  "bugs": "https://github.com/lukaszgrolik/mobx-collection-rest-api/issues",
+  "author": {
+    "name": "Łukasz Grolik",
+    "email": "lukasz@grolik.pl",
+    "url": "https://github.com/lukaszgrolik"
+  },
+  "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors",
+    "dev:watch": "WEBPACK_ENV=dev webpack --progress --colors --watch",
+    "build": "WEBPACK_ENV=build webpack",
+    "test": "mocha --recursive",
+    "test:build": "NODE_ENV=production npm run test",
+    "preversion": "npm run dev && npm run build && npm run test:build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "mobx-collection": "0.x"
+  },
+  "devDependencies": {
+    "axios": "^0.12.0",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "hapi": "^13.5.0",
+    "mobx": "^2.3.5",
+    "mobx-collection": "^0.1.0",
+    "mocha": "^2.5.3",
+    "should": "^9.0.2",
+    "webpack": "^1.13.1"
+  },
+  "license": "MIT"
+}
