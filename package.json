@@ -1,6 +1,6 @@
 {
   "name": "mobx-collection-rest-api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/mobx-collection-rest-api.min.js",
   "description": "REST API decorator for mobx-collection",
   "keywords": [
